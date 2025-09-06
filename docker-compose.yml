@@ -1,12 +1,12 @@
 services:
-  backend:
-    build:
-      context: ./backend2
-    ports:
-      - "8092:8080"
-    environment:
-      - NODE_ENV=production
-    restart: unless-stopped
+  # backend:
+  #   build:
+  #     context: ./backend2
+  #   ports:
+  #     - "8092:8080"
+  #   environment:
+  #     - NODE_ENV=production
+  #   restart: unless-stopped
 
   node:
     build:
