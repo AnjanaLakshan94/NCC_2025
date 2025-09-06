@@ -13,8 +13,6 @@ services:
       context: ./backend2
     ports:
       - "5000:5000"
-    depends_on:
-      - backend
     restart: unless-stopped
 
   frontend:
@@ -23,7 +21,7 @@ services:
     ports:
       - "80:80"
     depends_on:
-      - backend
+      - node
     restart: unless-stopped
 
 networks:
